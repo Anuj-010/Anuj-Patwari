@@ -47,8 +47,8 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
+  const leftLists = ["ReactJS", "Postgress", "Typescript"];
+  const rightLists = ["NextJS", "Prisma", "UI/UX"];
 
   const [copied, setCopied] = useState(false);
   const [animationTrigger, setAnimationTrigger] = useState(false);
@@ -137,26 +137,26 @@ export const BentoGridItem = ({
           {id === 2 && <GlobeDemo />}
 
           {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-5">
+            <div className="flex gap-1 lg:gap-3 w-fit absolute -right-3 lg:-right-2">
+              <div className="flex flex-col gap-3 md:gap-3 lg:gap-4">
                 {leftLists.map((item, i) => (
                   <span
                     key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-xs opacity-50 
+                    lg:opacity-50 rounded-lg text-center bg-[#10132E]"
                   >
                     {item}
                   </span>
                 ))}
                 <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
               </div>
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-5">
+              <div className="flex flex-col gap-3 md:gap-3 lg:gap-4">
                 <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
                 {rightLists.map((item, i) => (
                   <span
                     key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-xs opacity-50 
+                    lg:opacity-50 rounded-lg text-center bg-[#10132E]"
                   >
                     {item}
                   </span>
